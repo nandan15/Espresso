@@ -18,7 +18,13 @@ export class ViewComponent implements AfterViewInit {
   
   
     viewBlogPost() {
-      this.router.navigate(['/blog']);
+      this.router.navigate(['/blog1']);
+    }
+    viewBlogPost1() {
+      this.router.navigate(['/blog2']);
+    }
+    viewBlogPost2() {
+      this.router.navigate(['/blog3']);
     }
     viewproject() {
       this.router.navigate(['/project']);
@@ -35,7 +41,9 @@ export class ViewComponent implements AfterViewInit {
     viewcurtains() {
       this.router.navigate(['/curtains']);
     }
-   
+    viewprivacy() {
+      this.router.navigate(['/privacy']);
+    }
   
   
     ngOnInit(): void {
@@ -60,12 +68,7 @@ export class ViewComponent implements AfterViewInit {
       }
   
       
-      // window.scrollTo(0, 0);
-  
-      // // Optional: If you want to ensure you are at the home route after refresh, use this.
-      // if (this.router.url === '/') {
-      //   this.router.navigate(['/header']);  // Navigate to the home route
-      // }
+      
     }
   }
  

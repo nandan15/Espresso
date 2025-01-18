@@ -1,85 +1,58 @@
-.grid{
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   gap: 10px;
-   width: 80%;
-   margin-left: 13%;
-   
-    
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 5%;
+  padding-left: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 5%;
 }
-.grid img{
-    width: 300px;
-    height: 400px;
-    box-shadow: 1 15px 25px darkgray;
-    background: #f9f9f9;
-    border: 8px solid darkgray;
-    margin-top: 20%;
-}
-.paragraph{
-    text-align: center;
-    font-family: Rubik;
-}
-.paragraph h1{
-  font-size: 42px;
-  font-weight: bold;
-  color: #101F46;
-  font-family: Rubik;
-}
-.paragraph p{
-  line-height: 1.6;
-  word-wrap: break-word;
-  font-size: 18px;
-  color: #383838;
-  font-family: Rubik;
-  margin-top: 10px;
-}
-.company{
-    position: relative;
-    text-align: center;
-    color: white;
-}
-.right{
-    position: relative;
-    top: 20px;
-    color: red;
-    margin-top: 15px;
-    font-size: 23px;
+.grid-container1 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 35px;
+  padding-left: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 5%;
 }
 
+.grid-item {
+  /* background-color: #f9f9f9;
+  border: 1px solid #ccc; */
+  border-radius: 5px;
+  overflow: hidden;
+}
 
-/* .container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  
-  .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-  }
-  
-  .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  }
-  
-  .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-  }
-  
-  .bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-  }
-  
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  } */
+.grid-item:nth-child(1) {
+  grid-column: span 4;
+}
+
+.grid-item:nth-child(2) {
+  grid-column: span 4;
+  margin-top: 15px;
+}
+
+.grid-item:nth-child(3) {
+  grid-column: span 4;
+  margin-top: 30px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.item-info {
+  padding: 10px;
+}
+
+.item-info h3 {
+  margin: 0 0 5px;
+  font-size: 1.2em;
+}
+
+.item-info p {
+  margin: 0;
+  color: #555;
+}
