@@ -9,7 +9,14 @@ import { Router } from '@angular/router';
 export class CurtainsComponent {
 constructor(private router: Router) {}
 
+scrollToTop(): void {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
   viewproject() {
     this.router.navigate(['/home/view']);
+  }
+  viewprivacy() {
+    this.router.navigate(['/privacy']);
   }
 }

@@ -7,10 +7,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./painting.component.css']
 })
 export class PaintingComponent {
-
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
  constructor(private router: Router) {}
 
   viewproject() {
     this.router.navigate(['/home/view']);
+  }
+
+  viewprivacy() {
+    this.router.navigate(['/privacy']);
   }
 }

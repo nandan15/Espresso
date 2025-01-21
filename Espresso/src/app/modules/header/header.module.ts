@@ -13,8 +13,8 @@ import { headergrouter } from './header.router';
     CommonModule,
     headergrouter,
   ],
-    exports:[
-     HeaderComponent,
-    ]
+  exports:[
+    HeaderComponent
+  ]
 })
 export class HeaderModule { }

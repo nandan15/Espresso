@@ -3,7 +3,7 @@ import { Routes,RouterModule } from "@angular/router";
 import { HeaderComponent } from "./header/header.component";
 
 const headerRoutes:Routes=[
-    {path:'header',component:HeaderComponent}
+    {path:'',component:HeaderComponent}
 ];
 @NgModule({
     imports:[RouterModule.forChild(headerRoutes)],

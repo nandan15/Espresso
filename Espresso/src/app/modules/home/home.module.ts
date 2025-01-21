@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 import { ViewComponent } from './view/view.component';
 import { HomeComponent } from './home/home.component';
 import {  HomeRoutingModule } from './home.router';
+import { HeaderModule } from '../header/header.module';
+import { FooterModule } from '../footer/footer.module';
+
+
 @NgModule({
   declarations: [
     ViewComponent,
@@ -10,7 +14,9 @@ import {  HomeRoutingModule } from './home.router';
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    HeaderModule,
+    FooterModule,
    
 ],
 exports: [ 

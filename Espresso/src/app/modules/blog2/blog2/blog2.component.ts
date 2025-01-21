@@ -8,6 +8,10 @@ import { Component,OnInit } from '@angular/core';
 export class Blog2Component implements OnInit {
   selectedContent: any; // Holds the selected news item object
 
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   newsItems = [
     { 
       title: ' Revamp Your Walls with a Splash of Color', 

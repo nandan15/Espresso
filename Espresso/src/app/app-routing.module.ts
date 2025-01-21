@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home/view', pathMatch: 'full' },
+  {path:'thank',loadChildren:() => import('./modules/thank/thank.module').then(m=>m.ThankModule)},
+  {path:'footer',loadChildren:() => import('./modules/footer/footer.module').then(m => m.FooterModule)},
   { path: 'home', loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule) },
   { path: 'wallpaper', loadChildren: () => import('./modules/wallpaper/wallpaper.module').then(m => m.WallpaperModule) },
   { path: 'wallpaneling', loadChildren: () => import('./modules/wall-paneling/wall-paneling.module').then(m => m.WallPanelingModule) },

@@ -1,0 +1,109 @@
+footer {
+    background: linear-gradient(to right, #2e2e2e, #1a1a1a);
+    color: #fff;
+    padding: 40px 0;
+    border-top-left-radius: 200px;
+    overflow-x: hidden;
+    font-family: rubik;
+    text-align: left;
+    margin-top: 40px;
+    /* background-color: #a38c74; */
+  }
+  
+  .footer-container {
+    /* display: flex;
+    justify-content:space-evenly ;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin-left: 4%; */
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 50px;
+    
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+    font-family: rubik;
+  }
+  
+  /* .footer-section .logoss {
+    width: 50px;
+    height: 20px;
+  } */
+  .footer-section ul h2{
+    font-family: rubik;
+    font-size: 25px;
+  }
+  #logo6 {
+    width: 250px;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: -5%;
+  }
+  .footer-section p, .footer-section ul {
+    margin: 0 0 10px;
+    font-family: rubik;
+    font-size: 18px;
+  }
+  
+  .footer-section p a{
+    list-style: none;
+    color: white;
+    text-decoration: none !important;
+  }
+  .footer-section a {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+    list-style-type:none !important;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none !important;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
+  .newsletter ul li a {
+    color: #fff;
+    text-decoration: none !important;
+  }
+  .newsletter ul li  a:hover {
+    background-color:#74c19e;
+    color: white;
+    padding: 10px;
+  }
+  .social-icons {
+    margin-top: 50px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background: #1a1a1a;
+    font-family: rubik;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-family: rubik;
+  }
+  

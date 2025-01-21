@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./privacy.component.css']
 })
 export class PrivacyComponent {
-
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
