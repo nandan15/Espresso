@@ -11,14 +11,16 @@ footer {
   }
   
   .footer-container {
-    /* display: flex;
-    justify-content:space-evenly ;
+    display: flex;
+    justify-content:space-around ;
     flex-wrap: wrap;
     max-width: 1500px;
-    margin-left: 4%; */
-    display: grid;
+    margin-left: 3%;
+    gap: 100px;
+    /* display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    gap: 50px;
+    flex-wrap: wrap;
+    gap: 50px; */
     
   }
   

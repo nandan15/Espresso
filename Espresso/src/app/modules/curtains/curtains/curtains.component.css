@@ -670,5 +670,12 @@ input:focus, select:focus {
 #myBtn:hover {
   background-color: #74c19e;
 }
+@media (max-width: 768px) {
+  .painting {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-left: 15%;
+  }
 
+}
 

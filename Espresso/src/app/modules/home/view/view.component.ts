@@ -1,4 +1,4 @@
-import { Component, AfterViewInit,HostListener  } from '@angular/core';
+import { Component,OnInit, AfterViewInit,HostListener  } from '@angular/core';
 import { Router } from '@angular/router';
 
 
@@ -7,8 +7,42 @@ import { Router } from '@angular/router';
   templateUrl: './view.component.html',
   styleUrls: ['./view.component.css']
 })
-export class ViewComponent implements AfterViewInit {
-
+export class ViewComponent implements OnInit, AfterViewInit {
+  
+  activeStep: number = 1;
+  steps = [
+    { 
+      title: 'Contact Us', 
+      description: ['Fill A Simple Form'],
+      icon: 'fa-solid fa-envelope' // Icon for this step
+    },
+    { 
+      title: 'Consultation With Design Lead', 
+      description: [
+        'Detailed Finishes And Requirements Discussed'
+      ],
+      icon: 'fa-solid fa-users' // Icon for this step
+    },
+    { 
+      title: 'Pay Booking Amount', 
+      description: [
+        'Booking Confirmed'
+      ],
+      icon: 'fa-solid fa-credit-card' // Icon for this step
+    },
+    { 
+      title: 'Design Consultation At Your Home', 
+      description: [
+        'Selection Of Actual Finishes'
+      ],
+      icon: 'fa-solid fa-home' // Icon for this step
+    },
+    { 
+      title: 'Work Begins', 
+      description: ['Relax And Vibgyor Will Take Care Of The Rest!'],
+      icon: 'fa-solid fa-cogs' // Icon for this step
+    }
+  ];
   isSticky: boolean = false;
 
   @HostListener('window:scroll', [])
@@ -90,8 +124,17 @@ export class ViewComponent implements AfterViewInit {
         });
       }
   
+      this.syncStepsWithCarousel();
       
-      
+    }
+ 
+    syncStepsWithCarousel() {
+      const carouselElement = document.querySelector('#carouselExampleCrossfade');
+      if (carouselElement) {
+        carouselElement.addEventListener('slide.bs.carousel', (event: any) => {
+          this.activeStep = event.to + 1; 
+        });
+      }
     }
   }
  

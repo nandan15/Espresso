@@ -41,6 +41,9 @@ export class HeaderComponent implements AfterViewInit, AfterViewInit {
     viewBlogPost() {
       this.router.navigate(['/blog1']);
     }
+    viewBlog() {
+      this.router.navigate(['/blog']);
+    }
     viewBlogPost1() {
       this.router.navigate(['/blog2']);
     }
@@ -68,7 +71,10 @@ export class HeaderComponent implements AfterViewInit, AfterViewInit {
     viewthank() {
       this.router.navigate(['/thank']);
     }
-  
+    openBooking(): void {
+      const appointyUrl = 'https://booking.appointy.com/EspressoByVibgyor';
+      window.open(appointyUrl, '_blank'); // Open in a new tab
+    }
   
     ngOnInit(): void {
       const video = document.getElementById('serviceVideo') as HTMLVideoElement;

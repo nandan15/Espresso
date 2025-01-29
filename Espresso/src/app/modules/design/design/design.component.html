@@ -1,0 +1,165 @@
+<!-- <div class="renovation-journey">
+
+  <div class="journey-image">
+    <div id="carouselExampleCrossfade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1000" data-bs-wrap="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/home2.png" class="d-block w-100" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/home1.png" class="d-block w-100" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/home3.png" class="d-block w-100" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </div>
+      </div>
+    
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCrossfade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCrossfade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+  </div>
+
+ 
+  <div class="journey-steps">
+    <h2>Your Renovation Journey</h2>
+    <div class="step">
+      <div class="step-icon">1</div>
+      <div class="step-details">
+        <h3>Contact Us</h3>
+        <p>Fill A Simple Form</p>
+
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-icon">2</div>
+      <div class="step-details">
+        <h3>Consultation With Design Lead</h3>
+        <p>Detailed Finishes And Requirements Discussed</p>
+        <p>Instant Detailed Quote Shared</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-icon">3</div>
+      <div class="step-details">
+        <h3>Pay Booking Amount</h3>
+        <p>Booking Confirmed</p>
+        <p>Team Assigned For Your Project</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-icon">4</div>
+      <div class="step-details">
+        <h3>Design Consultation At Your Home</h3>
+        <p>Selection Of Actual Finishes</p>
+        <p>Confirmation Of Your Order</p>
+        <p>Decide Date Of Work Commencement</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-icon">5</div>
+      <div class="step-details">
+        <h3>Work Begins</h3>
+        <p>Relax And Vibgyor Will Take Care Of The Rest!</p>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- <div class="container10">
+  <div class="image-section1">
+    <div class="journey-image">
+      <div id="carouselExampleCrossfade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000" data-bs-wrap="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://assets.nobroker.in/nob-interior/reno_inspection.webp" class="d-block w-100" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img src="https://assets.nobroker.in/nob-interior/reno_expert.webp" class="d-block w-100" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img src="https://assets.nobroker.in/nob-interior/reno_quote.webp" class="d-block w-100" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img src="https://assets.nobroker.in/nob-interior/reno_service.webp" class="d-block w-100" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img src="https://assets.nobroker.in/nob-interior/reno_key_home.webp" class="d-block w-100" alt="Second slide">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content-section">
+    <h2>How Does It Work</h2>
+    <div class="steps">
+      <div class="step" *ngFor="let step of steps; let i = index" [ngClass]="{ 'active': activeStep > i }">
+        <div class="step-icon">{{ i + 1 }}</div>
+          <div class="font"><i [class]="step.icon"></i></div> 
+        <div class="step-text">
+          <h3>{{ step.title }}</h3>
+          <p *ngFor="let desc of step.description">{{ desc }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="chatbot-container">
+  
+  <button class="chatbot-btn" (click)="toggleForm()">
+    <i class="fa fa-phone"></i>
+  </button>
+  <!-- <button class="chatbot-btn" (click)="toggleForm()">Get Quote</button> -->
+
+  <!-- Contact Form (Hidden Initially) -->
+  <div class="chatbot-form" *ngIf="isFormVisible">
+    <div class="form-header">
+      <h3>Contact Us</h3>
+      <button class="close-btn" (click)="toggleForm()">×</button>
+    </div>
+    <div class="form-body">
+      <div class="form-group">
+        <label for="name">Name*</label>
+        <input type="text" id="name" placeholder="Enter" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number*</label>
+        <input type="tel" id="phone" placeholder="Enter" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email ID*</label>
+        <input type="email" id="email" placeholder="Enter" required>
+      </div>
+      <div class="form-group">
+        <label for="requirement">Requirement Type*</label>
+        <select id="requirement" required>
+          <option value="painting" selected>Painting</option>
+          <option value="wallpaper">Wallpaper</option>
+          <option value="wall-cladding">Wall Cladding</option>
+          <option value="curtains">Curtains</option>
+        </select>
+      </div>
+      <button class="submit-btn">Contact Us</button>
+    </div>
+  </div>
+</div>

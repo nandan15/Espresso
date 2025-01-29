@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import {  HomeRoutingModule } from './home.router';
 import { HeaderModule } from '../header/header.module';
 import { FooterModule } from '../footer/footer.module';
+import { DesignModule } from '../design/design.module';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { FooterModule } from '../footer/footer.module';
     HomeRoutingModule,
     HeaderModule,
     FooterModule,
+    DesignModule,
    
 ],
 exports: [ 

@@ -6,11 +6,11 @@
 <div id="headerSection" class="header">
 
       <div class="content">
-          <li><i class="fa-solid fa-phone"></i><a href="tel:+919071055001">+919071055001</a></li>
-          <li><i class="fa-solid fa-envelope"></i><a href="mailto:contact@espresssohomes.in">contact@espresssohomes.in</a></li>
-          <li><i class="fa-solid fa-location-dot"></i><a href="https://maps.app.goo.gl/tpxgdhab8jtSGyED8">Bangalore</a></li>
+          
+          <p>ESPRESSO by VIBGYOR</p>
       </div>
       <div class="sidecontent">
+        <li><i class="fa-solid fa-phone"></i><a href="tel:+919071055001">+919071055001</a></li>
           <a href="https://www.facebook.com/profile.php?id=61571912310393"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/espressobyvibgyor/"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://wa.me/message/FTPCQQNAMIION1" target="_blank"><i class="fab fa-whatsapp"></i></a>
@@ -47,13 +47,14 @@
     </div>
     <div class="dropdown1">
       <a href="#our-contact">Contact Us</a>
-      <div class="dropdown-content2">
+      <!-- <div class="dropdown-content2">
         <p>Footer</p>
-      </div>
+      </div> -->
     </div>
-    <div class="book-now">
-      <a href="#our-contact" class="book-now-btn">Book Now</a>
+    <div class="book-now" (click)="openBooking()">
+      <button>Book Now</button> 
     </div>
+    
   </nav>
 </div>
 </div>
@@ -103,34 +104,35 @@
       </div>
     </section>
     
-            <section id="our-contact" class="contact-form-section">
-              <h2>Contact Us </h2>
-              <div class="form-container">
-                  <div class="form-group">
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="phone">Phone Number*</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email ID*</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email ID" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="requirement">Requirement Type*</label>
-                    <select id="requirement" name="requirement" required>
-                      <option value="" disabled selected aria-placeholder="Select requirement type"></option>
-                      <option value="general">Painting</option>
-                      <option value="feedback">Wall paper</option>
-                      <option value="support">Wall Cladding</option>
-                      <option value="other">Curtains</option>
-                    </select>
-                  </div>
-                  <div class="form-group" style="flex: 1 1 100%; text-align: center;">
-                      <button type="submit" class="contact-btn" (click)=" viewthank()">Contact Us</button>
-                    </div>
-              </div>
-            </section>
+    <section id="our-contact" class="contact-form-section">
+      <h2>Contact Us</h2>
+      <div class="form-container">
+        <div class="form-group">
+          <label for="name">Name*</label>
+          <input type="text" id="name" name="name" placeholder="Enter" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number*</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email ID*</label>
+          <input type="email" id="email" name="email" placeholder="Enter" required>
+        </div>
+        <div class="form-group">
+          <label for="requirement">Requirement Type*</label>
+          <select id="requirement" placeholder="Enter" name="requirement" required>
+           
+            <option value="painting" selected>Painting</option>
+            <option value="wallpaper">Wallpaper</option>
+            <option value="wall-cladding">Wall Cladding</option>
+            <option value="curtains">Curtains</option>
+          </select>
+        </div>
+        <div class="form-group ">
+          <button type="submit" class="contact-btn" (click)=" viewthank()">Contact Us</button>
+        </div>
+      </div>
+    </section>
+    
             </div>
