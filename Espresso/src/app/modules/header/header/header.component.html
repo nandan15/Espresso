@@ -1,22 +1,31 @@
 <div class="conatiner">
-  <div class="sticky">
+  <div class="sticky" id="home">
   <div class="logo">
     <img  src="/assets/transparent.png" id="logo"  class="logo-img">
 </div>
-<div id="headerSection" class="header">
+<!-- <div id="headerSection" class="header">
 
       <div class="content">
           
           <p>ESPRESSO by VIBGYOR</p>
       </div>
       <div class="sidecontent">
-        <li><i class="fa-solid fa-phone"></i><a href="tel:+919071055001">+919071055001</a></li>
+        <li><i class="fa-solid fa-phone"></i><a href="tel:+919071055001">9071055001</a></li>
           <a href="https://www.facebook.com/profile.php?id=61571912310393"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/espressobyvibgyor/"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://wa.me/message/FTPCQQNAMIION1" target="_blank"><i class="fab fa-whatsapp"></i></a>
       </div>
+</div> -->
+<div class="top-bar">
+  <div class="brand">ESPRESSO by VIBGYOR</div>
+  <div class="contact-info">
+      <li><i class="fa-solid fa-phone"></i>
+      <a href="tel:+919071055001" class="phone-number">9071055001</a></li>
+      <a href="https://www.facebook.com/profile.php?id=61571912310393" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/espressobyvibgyor/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/message/FTPCQQNAMIION1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
 </div>
-  
     <!-- Navbar Section -->
    <!-- Updated HTML -->
 <div class="navbar">
@@ -34,7 +43,7 @@
       </div>
     </div>
     <div class="dropdown1">
-      <a href="#">Popular Packages</a>
+      <a href="#popular-packages">Popular Packages</a>
     </div>
     <div class="dropdown1">
       <a href="#">About Us</a>
@@ -58,7 +67,7 @@
   </nav>
 </div>
 </div>
-    <section class="hero">
+<section class="hero">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -121,9 +130,9 @@
         </div>
         <div class="form-group">
           <label for="requirement">Requirement Type*</label>
-          <select id="requirement" placeholder="Enter" name="requirement" required>
-           
-            <option value="painting" selected>Painting</option>
+          <select id="requirement" placeholder="selected" name="requirement" required>
+            <option selected>select</option>
+            <option value="painting">Painting</option>
             <option value="wallpaper">Wallpaper</option>
             <option value="wall-cladding">Wall Cladding</option>
             <option value="curtains">Curtains</option>

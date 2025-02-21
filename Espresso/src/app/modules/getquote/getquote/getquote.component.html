@@ -1,0 +1,36 @@
+<div class="chatbot-container">
+  <button class="chatbot-btn" (click)="toggleForm()">Get Quote</button>
+
+  <!-- Form visible based on 'isFormVisible' flag -->
+  <div class="chatbot-form" *ngIf="isFormVisible">
+    <div class="form-header">
+      <h3>Contact Us</h3>
+      <button class="close-btn" (click)="toggleForm()">×</button>
+    </div>
+    <div class="form-body">
+      <div class="form-group">
+        <label for="name">Name*</label>
+        <input type="text" id="name" placeholder="Enter" [(ngModel)]="formData.name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number*</label>
+        <input type="tel" id="phone" placeholder="Enter" [(ngModel)]="formData.phone" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email ID*</label>
+        <input type="email" id="email" placeholder="Enter" [(ngModel)]="formData.email" required>
+      </div>
+      <div class="form-group">
+        <label for="requirement">Requirement Type*</label>
+        <select id="requirement" [(ngModel)]="formData.requirement" required>
+          <option value="">Select</option>
+          <option value="painting">Painting</option>
+          <option value="wallpaper">Wallpaper</option>
+          <option value="wall-cladding">Wall Cladding</option>
+          <option value="curtains">Curtains</option>
+        </select>
+      </div>
+      <button class="submit-btn" (click)="sendEmail()">Submit</button>
+    </div>
+  </div>
+</div>

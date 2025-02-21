@@ -118,14 +118,24 @@
   }
   .subject{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-family: rubik;
-    gap: 15px;
+    gap: 50px;
   }
   .subject img{
     width: 200px;
     height: 130px;
     margin-top: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .subject img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
   }
   .subject1{
     display: flex;

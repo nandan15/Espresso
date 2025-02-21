@@ -96,6 +96,10 @@ footer {
     text-decoration: none;
     font-size: 20px;
   }
+  .social-icons a:hover{
+    color: blue;
+    transition: color 1s;
+  }
   
   .footer-bottom {
     text-align: center;

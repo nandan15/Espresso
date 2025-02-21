@@ -82,6 +82,7 @@ export class HeaderComponent implements AfterViewInit, AfterViewInit {
       if (video) {
         video.muted = true;  
         video.autoplay = true;
+        
         video.loop = true;
         video.play();
     

@@ -15,7 +15,7 @@ html {
   font-family: rubik;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: -5%;
+  margin-top: -5%; 
 }
 
 .section-title {
@@ -150,7 +150,9 @@ html {
   .section-title {
     font-size: 24px;
   }
-
+  .services-container{
+    margin-top: -50%;
+  }
   .section-intro {
     font-size: 14px;
   }
@@ -160,13 +162,14 @@ html {
     padding: 8px 16px;
   }
 }
+
 .packages-section {
-  background-color: #f9f9f9;
-  padding: 40px 20px;
-  max-width: 65%;
-  margin: auto;
+  
   border-radius: 10px;
   font-family: Rubik;
+  padding: 20px;
+  max-width: 950px;
+  margin: 0 auto;
 }
 
 .packages-container {
@@ -195,52 +198,7 @@ font-weight: normal;
 font-style: normal;
 }
 
-.packages-list {
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
- gap: 20px;
 
-}
-
-.package-item {
-  background-color: #b1a4a4;
-  height:300px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.package-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.package-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.package-price {
-  background-color: #e74c3c;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 18px;
-  margin-bottom: 10px;
-  display: inline-block;
-  
-}
-
-.package-details {
-  font-size: 14px;
-  color: #777;
-  
-}
 
 @media (max-width: 768px) {
   .package-item {
@@ -251,6 +209,120 @@ font-style: normal;
 @media (max-width: 480px) {
   .package-item {
     width: 100%; 
+  }
+}
+.services-grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  margin-left: 3%;
+}
+
+.service-item1 {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+.service-item1:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.service-image1 {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.service-image1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-title1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  font-family: Rubik;
+}
+
+
+.service-details1 {
+  text-align: center;
+  font-family: Rubik;
+}
+
+.service-description1 {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin: 20px 0;
+  font-family: Rubik;
+}
+
+.service-images1 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.image-item {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .services-grid1 {
+    grid-template-columns: 1fr;
+  }
+
+  .image-item1 {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid1 {
+    grid-template-columns: 1fr;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-intro {
+    font-size: 14px;
+  }
+
+  .back-button {
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }
 .container10 {
@@ -279,8 +351,8 @@ font-style: normal;
 
 .journey-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 450px;
+  
 }
 .carousel-item img{
   width: 100%;
@@ -391,7 +463,9 @@ font-style: normal;
   .container10 {
       flex-direction: column;
   }
-
+  .carousel-item img {
+    height: 70vh; 
+  }
   .image-section1 {
       flex: 1 1 100%;
       min-height: 200px;
@@ -434,7 +508,9 @@ font-style: normal;
       max-width: 100%;
       padding: 0;
   }
-
+  .carousel-item img {
+    height: 60vh; 
+  }
   .image-section1 {
       flex: 1 1 100%;
   }
@@ -454,9 +530,7 @@ font-style: normal;
       font-size: 14px;
   }
   .step::after {
-    left: 5px; 
-    top: 50px;   
-    height: 60px;
+  display: none;
 }
 
 .step:last-child::after {
@@ -474,7 +548,11 @@ font-style: normal;
       font-size: 35px;
   }
 }
-
+@media (max-width: 360px) {
+  .carousel-item img {
+    height: 50vh; 
+  }
+}
 .quote-builder-section {
   background-color: #ff5a5a;
   display: flex;

@@ -6,6 +6,7 @@ import {  HomeRoutingModule } from './home.router';
 import { HeaderModule } from '../header/header.module';
 import { FooterModule } from '../footer/footer.module';
 import { DesignModule } from '../design/design.module';
+import { GetquoteModule } from "../getquote/getquote.module";
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { DesignModule } from '../design/design.module';
     HeaderModule,
     FooterModule,
     DesignModule,
-   
+    GetquoteModule
 ],
 exports: [ 
   ViewComponent
